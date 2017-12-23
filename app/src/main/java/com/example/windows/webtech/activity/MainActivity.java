@@ -340,7 +340,6 @@ public class MainActivity extends BaseActivity {
         brandId = Addtagdialog.findViewById(R.id.brandName);
         timedata = Addtagdialog.findViewById(R.id.timedata);
         searchdata_rc = Addtagdialog.findViewById(R.id.searchdata_rc);
-        //searchdata_rc.setLayoutManager(searchManager);
         Addtagdialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         Addtagdialog.getWindow()
                 .getAttributes().windowAnimations = R.style.DialogAnimation;
@@ -441,7 +440,7 @@ public class MainActivity extends BaseActivity {
     //================================  getTimeStamp Api==================================
 
     public void changeTimetoTimeStamp() {
-        String str_date ="2017-12-22 11:01:00" ;
+        String str_date = timedata.getText().toString() ;
         DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = null;
         try {
@@ -451,6 +450,7 @@ public class MainActivity extends BaseActivity {
             getTimeStamp(timestamp);
 
         } catch (ParseException e) {
+            Toast.makeText(MainActivity.this,"please use this formate yyyy-MM-dd HH:mm:ss",Toast.LENGTH_LONG).show();
             e.printStackTrace();
         }
 

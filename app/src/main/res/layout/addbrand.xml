@@ -21,14 +21,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_marginRight="@dimen/dimen10"
+        android:layout_marginTop="@dimen/dimen20">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="13dp"
+            android:textSize="@dimen/dimen13"
             android:id="@+id/brandName"
             android:background="@drawable/rectangulerfile"
             android:hint="Enter Brand Name"
@@ -38,8 +38,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginBottom="@dimen/dimen20"
+        android:layout_marginTop="@dimen/dimen20"
         android:gravity="center"
         android:layout_marginLeft="@dimen/dimen16"
         android:layout_marginRight="@dimen/dimen16"
@@ -48,10 +48,10 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="13dp"
+            android:textSize="@dimen/dimen13"
             android:id="@+id/descreiption"
             android:background="@drawable/rectangulerfile"
-            android:hint="Enter Brand Description"
+            android:hint="Enter  Brand  Description"
             android:padding="@dimen/dimen12" />
     </LinearLayout>
     <LinearLayout
