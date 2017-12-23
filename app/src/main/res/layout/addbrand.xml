@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/for_design_card"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen16"
+        android:id="@+id/textdata"
+        android:text="Add Brands"
+        android:textSize="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/textColor"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="13dp"
+            android:id="@+id/brandName"
+            android:background="@drawable/rectangulerfile"
+            android:hint="Enter Brand Name"
+            android:padding="@dimen/dimen12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen16"
+        android:layout_marginRight="@dimen/dimen16"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="13dp"
+            android:id="@+id/descreiption"
+            android:background="@drawable/rectangulerfile"
+            android:hint="Enter Brand Description"
+            android:padding="@dimen/dimen12" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:text="Cancle"
+            android:textAllCaps="false"
+            android:id="@+id/cancle"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="0dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:text="Save"
+            android:id="@+id/save"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/addmore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Add More"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
